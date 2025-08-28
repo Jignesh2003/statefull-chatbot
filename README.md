@@ -27,7 +27,7 @@ cd statefull-chatbot
 ```bash
 pip install -r requirements.txt
 ```
-3. Set your API KEY
+3. Set your API KEY (Inside models/Groq_LLM.py)
 ```bash
 GEMINI_API_KEY=your_api_key_here
 ```

@@ -30,6 +30,10 @@ pip install -r requirements.txt
 3. Set your API KEY (Inside models/Groq_LLM.py)
 ```bash
 GEMINI_API_KEY=your_api_key_here
+
+or
+
+- Locally: create a `.env` file with `GEMINI_API_KEY=your_key_here`
 ```
 4. Launch the application:
 ```bash

@@ -2,9 +2,11 @@ from google import genai
 from google.genai import types
 import json
 import streamlit as st
+import os
 from services import myServices as ms
 #=======================================
-GEMINI_API_KEY = "AIzaSyBG6WDbXG50zIo2gH2KnojuDqk-f6CI_jY"
+#GEMINI_API_KEY = "<your-api-key>"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 #========================================
 
 def GeminiConnection():
@@ -164,4 +166,5 @@ def GatherInformation(client,mssg, userInput):
     except Exception as e:
         print(f"Error converting to dict: {e}")
         return None
+
 #=======================================

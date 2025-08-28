@@ -1,12 +1,19 @@
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
+from services import myServices as ms
 import json
 import streamlit as st
 import os
-from services import myServices as ms
 #=======================================
-GEMINI_API_KEY = YOUR_API_KEY
-#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+#GEMINI_API_KEY = YOUR_API_KEY
+
+load_dotenv()
+GEMINI_API_KEY = (st.secrets.get(GEMINI_API_KEY) or os.getenv(GEMNINI_API_KEY))
+
+
+if GEMINI_API_KEY is None:
+    raise ValueError("⚠️ GEMINI_API_KEY not found. Please set it as an environment variable.")
 #========================================
 
 def GeminiConnection():
@@ -168,4 +175,5 @@ def GatherInformation(client,mssg, userInput):
         return None
 
 #=======================================
+
 

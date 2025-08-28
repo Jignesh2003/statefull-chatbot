@@ -1,0 +1,189 @@
+{
+  "Chat1": [
+    {
+      "cbname": "CArnage",
+      "additional_information": "Based on the user tech stack, ask them 3-5 questions regarding it to judge their proficiency."
+    },
+    {
+      "information_gathered": false,
+      "name": "Giyan Girader",
+      "age": 21,
+      "email": "giyan@gmail.com",
+      "phone_number": 1234567890,
+      "current_location": "Gandhinagar",
+      "year_of_experience": "",
+      "desired_position": "",
+      "technical_stack": []
+    },
+    {
+      "role": "assistant",
+      "content": "\ud83d\udc4b Hi canditate ! I'm CArnage. What is your name :)"
+    },
+    {
+      "role": "user",
+      "content": "my name is Giyan Girader"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your age"
+    },
+    {
+      "role": "user",
+      "content": "I am 21 years old"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your email"
+    },
+    {
+      "role": "user",
+      "content": "giyan@gmail.com"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your phone number"
+    },
+    {
+      "role": "user",
+      "content": "1234567890"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your current location"
+    },
+    {
+      "role": "user",
+      "content": "Gandhinagar"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your year of experience"
+    }
+  ],
+  "Chat2": [
+    {
+      "cbname": "Talent Scout",
+      "additional_information": "Based on the user tech stack, ask 3-5 questions regarding it to judge their proficiency.",
+      "questions_asked": 0
+    },
+    {
+      "information_gathered": false,
+      "name": "",
+      "age": "",
+      "email": "",
+      "phone_number": "",
+      "current_location": "",
+      "year_of_experience": "",
+      "desired_position": "",
+      "technical_stack": ""
+    },
+    {
+      "role": "assistant",
+      "content": "\ud83d\udc4b Hi canditate ! I'm Talent Scout. What is your name :)"
+    },
+    {
+      "role": "user",
+      "content": "my name is Jignesh Rana"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your age"
+    },
+    {
+      "role": "user",
+      "content": "I am 21 years old"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your email"
+    },
+    {
+      "role": "user",
+      "content": "jignesh@gmail.com"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your phone number"
+    },
+    {
+      "role": "user",
+      "content": "1234567890"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your current location"
+    },
+    {
+      "role": "user",
+      "content": "Mumbai"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your year of experience"
+    },
+    {
+      "role": "user",
+      "content": "I am a fresher"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your desired position"
+    },
+    {
+      "role": "user",
+      "content": "AI Intern"
+    },
+    {
+      "role": "assistant",
+      "content": "Please provide your technical stack"
+    },
+    {
+      "role": "user",
+      "content": "Python, Flask"
+    },
+    {
+      "role": "assistant",
+      "content": "This is all the information so far you have provided  \nName: Jignesh Rana  \nAge: 21  \nEmail: jignesh@gmail.com  \nPhone Number: 1234567890  \nCurrent Location: Mumbai  \nYear of Experience: 0  \nDesired Position: AI Intern  \nTechnological Stack: ['Python', 'Flask']  \n\u2705 Let's start the interview!\n\n1. Can you explain the difference between lists and tuples in Python?"
+    },
+    {
+      "role": "user",
+      "content": "The main difference is that a list is mutable, meaning we can change its contents after its created, while tuple is immutable, meaning you cannot change it."
+    },
+    {
+      "role": "assistant",
+      "content": "2. What is a virtual environment in Python, and why is it considered a best practice to use one for your projects?"
+    },
+    {
+      "role": "user",
+      "content": "A python virtual environment is an isolated, self-contained directory that holds a specific versions of python plus all the necessary packages and libraries required for a particular project.\n\nIts considered a best practice because it prevents dependency conflicts and makes your projects more portable and reproducible."
+    },
+    {
+      "role": "assistant",
+      "content": "3. How do you define a basic route in Flask, and what is the purpose of the `@app.route()` decorator?"
+    },
+    {
+      "role": "user",
+      "content": "we define a basic route in Flask by creating a Python function that returns HTTP response and then associating with a URL path using the @app.route() decorator.\n\nThe purpose of the @app.route() decorator is to bind a URL to specific python function. When a user navigates to that URL in their web browser, Flask executes the function decorated with that route and sends its return value back to the browser as the response."
+    },
+    {
+      "role": "assistant",
+      "content": "4. How do you render an HTML template in Flask, and what is the purpose of the `render_template()` function?"
+    },
+    {
+      "role": "user",
+      "content": "we render an HTML template in Flask by calling the render_template() function from within a route. This function is the standard way to serve HTML files to users instead of just returning simple strings."
+    },
+    {
+      "role": "assistant",
+      "content": "5. How would you handle form data submitted via a POST request in a Flask application?"
+    },
+    {
+      "role": "user",
+      "content": "we handle form data submitted via POST request in Flask application by importing the global request object and accesing the submitted data through the request.form dictionary like object"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for your time, Jignesh! It was a pleasure speaking with you.\n\n**Summary of your performance:**\n\nYou demonstrated a solid understanding of fundamental Python concepts, clearly explaining the difference between lists and tuples and the importance of virtual environments. Your knowledge of Flask basics, including defining routes, rendering templates, and handling form data, is also commendable.\n\nOverall, you provided clear and accurate answers to all the technical questions, showcasing a good grasp of your stated technical stack."
+    }
+  ]
+}

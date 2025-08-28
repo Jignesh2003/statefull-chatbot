@@ -5,8 +5,8 @@ import streamlit as st
 import os
 from services import myServices as ms
 #=======================================
-#GEMINI_API_KEY = "<your-api-key>"
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = YOUR_API_KEY
+#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 #========================================
 
 def GeminiConnection():
@@ -168,3 +168,4 @@ def GatherInformation(client,mssg, userInput):
         return None
 
 #=======================================
+

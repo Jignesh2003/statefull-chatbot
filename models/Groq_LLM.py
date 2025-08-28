@@ -9,7 +9,7 @@ import os
 #GEMINI_API_KEY = YOUR_API_KEY
 
 load_dotenv()
-GEMINI_API_KEY = (st.secrets.get(GEMINI_API_KEY) or os.getenv(GEMNINI_API_KEY))
+GEMINI_API_KEY = (st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMNINI_API_KEY"))
 
 
 if GEMINI_API_KEY is None:
@@ -175,5 +175,6 @@ def GatherInformation(client,mssg, userInput):
         return None
 
 #=======================================
+
 
 

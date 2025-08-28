@@ -1,3 +1,3 @@
 .env
-*.json
+chatHistory/*.json*.json
 *.pyc
